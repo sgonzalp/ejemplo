@@ -1,0 +1,273 @@
+/* 
+============ General Styles  ============ 
+Creé par :      Sigfrido Gonzalez Puga
+Projet:         EMICA | ANNEXE | 462166 | Connâitre Raspberry Pi
+Date :          Juin 2022
+*/
+
+body {
+  font-family: 'Roboto', sans-serif !important;
+}
+
+.underline {
+  text-decoration: none;
+}
+
+.underline:hover {
+  text-decoration: underline;
+  font-weight: bolder;
+  color: #B3446C;
+}
+
+.shadow_menu:hover {
+  width: 100%;
+  background-color: #e0c7dc;
+}
+
+.souligne {
+  text-decoration: underline;
+}
+
+/* Custom style for changing separator  */
+.breadcrumb-item+.breadcrumb-item::before {
+  content: ">";
+}
+
+table * {
+  white-space: nowrap;
+}
+
+.carousel-item {
+  min-height: 500px;
+  background-color: #825e71;
+}
+
+.box {
+  width: 400px;
+}
+
+
+/* ============ Loader-page  ============ */
+.loader-page {
+  position: fixed;
+  z-index: 25000;
+  background: rgb(255, 255, 255);
+  left: 0px;
+  top: 0px;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all .3s ease;
+}
+
+.loader-page::before {
+  content: "";
+  position: absolute;
+  border: 2px solid rgb(50, 150, 176);
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  box-sizing: border-box;
+  border-left: 2px solid rgba(50, 150, 176, 0);
+  border-top: 2px solid rgba(50, 150, 176, 0);
+  animation: rotarload 1s linear infinite;
+  transform: rotate(0deg);
+}
+
+@keyframes rotarload {
+  0% {
+    transform: rotate(0deg)
+  }
+
+  100% {
+    transform: rotate(360deg)
+  }
+}
+
+.loader-page::after {
+  content: "";
+  position: absolute;
+  border: 2px solid rgba(50, 150, 176, .5);
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  box-sizing: border-box;
+  border-left: 2px solid rgba(50, 150, 176, 0);
+  border-top: 2px solid rgba(50, 150, 176, 0);
+  animation: rotarload 1s ease-out infinite;
+  transform: rotate(0deg);
+}
+
+/* ============ Loader-page  ============ */
+
+/* ============ Video Responsive  ============ */
+.video-responsive {
+  position: relative;
+  padding-bottom: 56.25%;
+  /* 16/9 ratio */
+  padding-top: 30px;
+  /* IE6 workaround*/
+  height: 0;
+  overflow: hidden;
+}
+
+.video-responsive iframe,
+.video-responsive object,
+.video-responsive embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* ============ Video Responsive  ============ */
+
+/* ============ Raspberry Colors  ============ */
+.image_raspberry_gray_to_color {
+  position: relative;
+  height: 290px;
+  width: 290px;
+  margin: 50px 20px;
+  float: left;
+}
+
+.image_raspberry_gray_to_color img {
+  position: absolute;
+  left: 0;
+  transition: opacity 1.5s ease-in-out;
+}
+
+.image_raspberry_gray_to_color img.raspberry_top:hover {
+  opacity: 0;
+}
+
+.bg-color-berry-dark {
+  background-color: #bf5f82;
+}
+
+.bg-color-berry-normal {
+  background-color: #92eaa13b;
+}
+
+.bg-color-berry-light {
+  background-color: #FCF5FB;
+}
+
+.txt_color_berry,
+.txt_color_berry a {
+  color: #B3446C;
+}
+
+.berry_contenedor {
+  position: relative;
+  height: 290px;
+  width: 290px;
+  margin: 50px 20px;
+  float: left;
+}
+
+.berry_contenedor img {
+  position: absolute;
+  left: 0;
+  transition: opacity 1.5s ease-in-out;
+}
+
+.berry_contenedor img.top:hover {
+  opacity: 0;
+}
+
+/* ============ Raspberry Colors ============ */
+
+
+/* ============ Menu multi level ============ */
+@media all and (min-width: 992px) {
+  .dropdown-menu li {
+    position: relative;
+  }
+
+  .nav-item .submenu {
+    display: none;
+    position: absolute;
+    left: 100%;
+    top: -7px;
+    color: #B3446C;
+  }
+
+  .nav-item .submenu-left {
+    right: 100%;
+    left: auto;
+  }
+
+  .dropdown-menu>li:hover {
+    background-color: #f1f1f1 !important
+  }
+
+  .dropdown-menu>li:hover>.submenu {
+    display: block;
+    background-color: #e9aae0 !important;
+  }
+
+  .dropdown .dropdown-menu {
+    background-color: #c180be !important;
+  }
+
+  .navbar-nav .active a {
+    color: #fff !important;
+    font-weight: bold !important;
+  }
+
+  .nav-item a:hover {
+    text-decoration: overline underline !important;
+  }
+}
+
+@media (max-width: 991px) {
+  .dropdown-menu .dropdown-menu {
+    margin-left: 0.7rem;
+    margin-right: 0.7rem;
+    margin-bottom: .5rem;
+  }
+}
+
+/* ============ Menu multi leve ============ */
+
+/* ============ SweetAlert2  ============ */
+.show-example-btn {
+  padding: 0.9em 2.1875em;
+  border: 0;
+  border-radius: 0.1875em;
+  background-color: #7066e0;
+  box-shadow: none;
+  color: #fff;
+  font-size: 1.125em;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.show-example-btn:hover {
+  background-color: #6459dd;
+}
+
+.show-example-btn:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(115, 103, 240, 0.5);
+}
+
+.show-example-btn::-moz-focus-inner {
+  border: 0;
+}
+
+.show-example-btn:active {
+  background-color: #483cd7;
+}
+
+/* ============ SweetAlert2  ============ */
+
+
+body.swal2-shown>[aria-hidden="true"] {
+  transition: 0.1s filter;
+  filter: blur(10px);
+}

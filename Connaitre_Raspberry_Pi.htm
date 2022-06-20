@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Sigfrido Gonzalez Puga">
+    <meta name="description" content="Page d'accueil du projet Tâche 2, module 462166.">
+    <title>EMICA Gr, i2013 Module 462166 - 2022</title>
+    <link href="./resources/css/main.css" rel="stylesheet">
+    <link rel="stylesheet" href="./resources/css/images.css">
+    <link rel="stylesheet" href="./resources/css/audio.css">
+    <link rel="shortcut icon" href="./resources/images/logos/favicon.png" type="image/png">
+
+    <script src="./resources/js/jquery.min.js"></script>
+
+    <link href="./resources/css/bootstrap.min.css" rel="stylesheet">
+    <script src="./resources/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://kit.fontawesome.com/a5f1e023c3.js" crossorigin="anonymous"></script>
+
+    <script src="./resources/js/sweetalert2.all.min.js"></script>
+    <link rel='stylesheet' href='./resources/css/sweetalert2.min.css'>
+
+    <script src="./resources/js/main_begin_page.js"></script>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@1,600&family=EB+Garamond:ital,wght@1,500&family=Roboto:wght@100&display=swap"
+        rel="stylesheet">
+
+
+</head>
+
+<body>
+    <div class="loader-page"></div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-color-berry-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="./resources/images/logos/favicon.png" height="28"
+                    alt="CoolBrand">
+                Connaître Raspberry Pi</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="main_nav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"> <a class="nav-link" href="./Accueil.htm">Accueil </a> </li>
+                    <li class="nav-item"><a class="nav-link" href="./Plan_Site.htm"> Plan du site </a></li>
+                    <li class="nav-item"><a class="nav-link" href="./Sites_Interets.htm"> Sites d’intérêts </a></li>
+                    <li class="nav-item"><a class="nav-link" href="./FAQ.htm"> FAQ </a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link  dropdown-toggle active" href="#" data-bs-toggle="dropdown"> Connaître
+                            Raspberry Pi</a>
+                        <ul class="dropdown-menu dropdown-menu-right">
+                            <li><a class="dropdown-item" href="./Connaitre_Raspberry_Pi.htm#histoire"> Un peu
+                                    d'histoire</a></li>
+                            <li><a class="dropdown-item" href="./Connaitre_Raspberry_Pi.htm#arduino"> Arduino... Qui
+                                    est-ce ? </a></li>
+                            <li><a class="dropdown-item" href="./Connaitre_Raspberry_Pi.htm#raspberry"> Pourquoi
+                                    Raspberry Pi et non Arduino ? </a></li>
+                            <li><a class="dropdown-item" href="./Connaitre_Raspberry_Pi.htm#composeRaspberry"> Comment
+                                    se compose Raspberry Pi ? <i class="fa-solid fa-circle-chevron-right"></i> </a>
+                                <ul class="submenu submenu-left dropdown-menu">
+                                    <li><a class="dropdown-item" href="./Connaitre_Raspberry_Pi.htm#hw"> <i
+                                                class="fa-solid fa-circle-chevron-left"></i> Le Hardware</a>
+                                        <ul class="submenu submenu-left dropdown-menu">
+                                            <li><a class="dropdown-item"
+                                                    href="./Connaitre_Raspberry_Pi.htm#hw_cpu">CPU/GPU</a></li>
+                                            <li><a class="dropdown-item"
+                                                    href="./Connaitre_Raspberry_Pi.htm#hw_ram">RAM</a></li>
+                                            <li><a class="dropdown-item" href="./Connaitre_Raspberry_Pi.htm#hw_usb">USB
+                                                    hub</a></li>
+                                            <li><a class="dropdown-item"
+                                                    href="./Connaitre_Raspberry_Pi.htm#hw_ethernet">Ethernet</a></li>
+                                            <li><a class="dropdown-item"
+                                                    href="./Connaitre_Raspberry_Pi.htm#hw_io">I/O</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a class="dropdown-item" href="./Connaitre_Raspberry_Pi.htm#sw"> <i
+                                                class="fa-solid fa-circle-chevron-left"></i> Le Software</a>
+                                        <ul class="submenu submenu-left dropdown-menu">
+                                            <li><a class="dropdown-item"
+                                                    href="./Connaitre_Raspberry_Pi.htm#sw_os">Système d'exploitation</a>
+                                            </li>
+                                            <li><a class="dropdown-item"
+                                                    href="./Connaitre_Raspberry_Pi.htm#sw_app">Logiciel
+                                                    d’applications</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a class="dropdown-item" href="./Connaitre_Raspberry_Pi.htm#quoi_faire"> Ce que vous
+                                    pouvez faire avec le Raspberry Pi <i class="fa-solid fa-circle-chevron-right"></i>
+                                </a>
+                                <ul class="submenu submenu-left dropdown-menu">
+                                    <li><a class="dropdown-item" href="./Connaitre_Raspberry_Pi.htm#idees_Simples">Voici
+                                            quelques idées simples</a></li>
+                                    <li><a class="dropdown-item" href="./Connaitre_Raspberry_Pi.htm#idees_avancees">Et
+                                            pour les plus aventureux</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link first" href="./A_Propos.htm"> À propos </a></li>
+                    <li class="nav-item"><a class="nav-link" href="./Contact.htm"> Contact </a></li>
+                </ul>
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link sweetalert2_login" href="#"> <i
+                                class="fa-regular fa-user"></i> Login
+                        </a></li>
+                </ul>
+            </div>
+            <!-- navbar-collapse.// -->
+        </div>
+        <!-- container-fluid.// -->
+    </nav>
+    <!-- End menu (for all pages) -->
+
+    <div class="container">
+        <nav>
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="./Accueil.htm">Accueil</a></li>
+                <li class="breadcrumb-item active">Connaître Raspberry Pi</li>
+            </ol>
+        </nav>
+        <h1><i class="fa-brands fa-raspberry-pi"></i> Connaître Raspberry Pi</h1>
+        <div class="accordion col-md-6" id="musique" style="margin:0px auto;">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button type="button" class="accordion-button bg-info collapsed text-dark" data-bs-toggle="collapse"
+                        data-bs-target="#collapseMusique">Voulez-vous écouter de la musique pendant que vous lisez
+                        ?</button>
+                </h2>
+                <div id="collapseMusique" class="accordion-collapse collapse" data-bs-parent="#musique">
+                    <div class="card-body">
+                        <div class="musica">
+                            <audio controls>
+                                <source src="./resources/audio/BEBECOIS_REMIX_COMIC_by_CarlosMarulanda.mp3" type="audio/mp3">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                        <h5 class="card-title text-center">Bebecois Remix Comic</h5>
+                        <p class="card-text text-center">« © <a href="https://www.instagram.com/carlos_m_jimenezmusik/"
+                            target="_blank">Carlos Marulanda</a>, 2017 »
+                            </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="m-4">
+            <div class="card text-center" id="histoire">
+                <div class="card-header display-6">Un peu d'histoire</div>
+                <div class="card-body text-start">
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <div class="card">
+                                <p class="contenedor"><img class="img-fluid imagen imagen-slide"
+                                        src="https://thumbs.dreamstime.com/b/lego-storybook-red-dragon-made-bricks-spitting-fire-43527303.jpg"
+                                        alt=""></p>
+                                <div class="card-body text-center">
+                                    Lego History Stock Photos (<a
+                                        href="https://www.dreamstime.com/photos-images/lego-history.html"
+                                        target="_blank">URL image</a>)
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <p>En 2009, une entité a été fondée dont l'objectif initial était de stimuler les
+                                étudiants en
+                                informatique : la "Fondation Raspberry Pi".
+                            </p>
+                            <p>
+                                Ils ont cherché le soutien d'enseignants et d'experts dans différentes matières
+                                technologiques
+                                afin de fabriquer un petit ordinateur à bas prix pour qu'il soit accessible au plus
+                                grand
+                                nombre, aux enfants bien sûr, et qu'ils entrent dans l'apprentissage de l'informatique.
+                            </p>
+                            <p>
+                                Un premier prototype a été lancé en 2012, monté sur un minuscule module semblable à une
+                                clé USB.
+                                Ce premier prototype n'avait qu'une connexion USB d'un côté et une HDMI de l'autre.
+                            </p>
+                            <p>
+                                Mais malgré sa simplicité, le prototype a eu plus de succès que prévu et a permis de
+                                diversifier
+                                son utilisation dans d'autres domaines que celui promu.</p>
+                        </div>
+                    </div>
+                    <div class="card-footer text-muted">
+                    </div>
+                </div>
+            </div>
+            <div class="mx-auto" style="width: 200px;">&nbsp;</div>
+            <div class="card text-center">
+                <div class="card-header display-6" id="arduino">Arduino... Qui est-ce ?</div>
+                <div class="card-body text-start">
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <div class="card">
+                                <p class="contenedor"><img class="img-fluid imagen imagen-rota"
+                                        src="https://live.staticflickr.com/3728/9583831483_00cbec7d65_b.jpg" alt=""></p>
+                                <div class="card-body text-center">
+                                    <p class="attribution">"<a target="_blank" rel="noopener noreferrer"
+                                            href="https://www.flickr.com/photos/52250666@N02/9583831483">arduino</a>" by
+                                        <a target="_blank" rel="noopener noreferrer"
+                                            href="https://www.flickr.com/photos/52250666@N02">gabriella_levine</a> is
+                                        licensed
+                                        under <a target="_blank" rel="noopener noreferrer"
+                                            href="https://creativecommons.org/licenses/by-nc-sa/2.0/?ref=openverse">CC
+                                            BY-NC-SA
+                                            2.0 <img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg"
+                                                style="height: 1em; margin-right: 0.125em; display: inline;" alt=""><img
+                                                src="https://mirrors.creativecommons.org/presskit/icons/by.svg"
+                                                style="height: 1em; margin-right: 0.125em; display: inline;" alt=""><img
+                                                src="https://mirrors.creativecommons.org/presskit/icons/nc.svg"
+                                                style="height: 1em; margin-right: 0.125em; display: inline;" alt=""><img
+                                                src="https://mirrors.creativecommons.org/presskit/icons/sa.svg"
+                                                style="height: 1em; margin-right: 0.125em; display: inline;"
+                                                alt=""></a>.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <p>Il existe d'autres produits similaires sur le marché, le plus connu est Arduino.
+                            </p>
+                            <p>
+                                Il serait très laborieux et long de faire la recherche et la comparaison avec les autres
+                                alternatives de Raspberry. C'est donc contre Arduino qu'il a été décidé de comparer afin
+                                de
+                                réaliser ce document.
+                            </p>
+                            <p>
+                                Arduino a vu le jour en 2005 en Italie. Son objectif était d'offrir aux étudiants une
+                                option
+                                abordable, simple et accessible pour leurs études d'électronique et de programmation.
+                            </p>
+                            <p>
+                                S'il est vrai qu'Arduino est beaucoup plus ancien que Raspberry Pi et qu'il a évolué
+                                depuis son
+                                premier prototype, la philosophie de la simplicité n'a pas changé : interagir avec
+                                l'environnement.
+                            </p>
+                            <p>
+                                Il dispose d'un microcontrôleur qui interagit avec des capteurs et des actionneurs
+                                grâce à des
+                                entrées ou des sorties analogiques ou numériques.
+                            </p>
+                            <p>
+                                Arduino est une plateforme open source. C'est-à-dire qu'en termes de matériel,
+                                chacun peut
+                                fabriquer sa propre carte ou utiliser celles disponibles sur le marché. En ce qui
+                                concerne le
+                                logiciel, Arduino vous permet de programmer le microcontrôleur à partir d'IDE
+                                (Integrated
+                                Development Environment) open source ainsi que d'utiliser des applications
+                                existantes ou de
+                                mettre à disposition de la communauté les applications créées (n'oubliez pas qu'il
+                                s'agit d'un
+                                logiciel open source).
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card-footer text-muted">
+                    </div>
+                </div>
+            </div>
+            <div class="mx-auto" style="width: 200px;">&nbsp;</div>
+            <div class="card text-center">
+                <div class="card-header display-6" id="raspberry">Pourquoi Raspberry Pi et non Arduino ?</div>
+                <div class="card-body text-start">
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <div class="card">
+                                <p class="contenedor"><img class="img-fluid imagen imagen-opacy"
+                                        src="https://live.staticflickr.com/8057/8226451812_be4a991216_k.jpg" alt=""></p>
+                                <div class="card-body text-center">
+                                    Photo Chris Potter (<a href="https://www.flickr.com/photos/86530412@N02/8226451812"
+                                        target="_blank">URL d'image</a>)
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <p>Il s'agit d'une question authentique et obligatoire. Mais la réponse est simple et elle
+                                est
+                                précisément due à la simplicité de l'Arduino.</p>
+                            <p>
+                                Si Arduino est la meilleure alternative dans certains projets où la simplicité et la
+                                spécialisation sont élémentaires, pour le but de ce travail, ce n'est pas suffisant.
+                            </p>
+                            <p>
+                                Il est vrai que la limite est la propre imagination de chaque personne qui va
+                                entreprendre
+                                son
+                                projet dans l'une de ces technologies. Mais le présent travail aborde la généralité afin
+                                que
+                                la
+                                personne qui va commencer avec Raspberry Pi puisse voir le potentiel qu'il peut avoir.
+                                Déjà
+                                avec
+                                plus d'expérience, vous pouvez décider de passer aux spécificités si cela vous semble
+                                nécessaire.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card-footer text-muted">
+                    </div>
+                </div>
+            </div>
+            <div class="mx-auto" style="width: 200px;">&nbsp;</div>
+            <div class="card text-center">
+                <div class="card-header display-6" id="composeRaspberry">Comment se compose Raspberry Pi ?</div>
+                <div class="card-body text-start">
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <div class="card">
+                                <p class="contenedor"><img class="img-fluid imagen imagen-zoom"
+                                        src="https://live.staticflickr.com/2207/12961865855_b022bf59dd.jpg" alt=""></p>
+                                <div class="card-body text-center">
+                                    <p class="attribution">"<a target="_blank" rel="noopener noreferrer"
+                                            href="https://www.flickr.com/photos/91795203@N02/12961865855">Raspberry
+                                            Pi</a>" by <a target="_blank" rel="noopener noreferrer"
+                                            href="https://www.flickr.com/photos/91795203@N02">xmodulo</a> is licensed
+                                        under <a target="_blank" rel="noopener noreferrer"
+                                            href="https://creativecommons.org/licenses/by/2.0/?ref=openverse">CC BY 2.0
+                                            <img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg"
+                                                style="height: 1em; margin-right: 0.125em; display: inline;" alt=""><img
+                                                src="https://mirrors.creativecommons.org/presskit/icons/by.svg"
+                                                style="height: 1em; margin-right: 0.125em; display: inline;"
+                                                alt=""></a>. </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <p>Le Raspberry Pi consiste en une carte qui possède tous les composants nécessaires pour
+                                fonctionner comme un ordinateur traditionnel.
+                            </p>
+                            <p>
+                                Elle a également ses limites compte tenu de la taille et des caractéristiques des
+                                composants. Il
+                                vous permet de programmer et de compiler des programmes qui s'exécutent sur lui.
+                            </p>
+                            <p>
+                                Le logiciel est Open Source. Mais pour ce qui est du matériel, la Fondation Raspberry
+                                garde le
+                                contrôle de la fabrication des cartes, seule la fondation peut les fabriquer.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="mx-auto" style="width: 200px;">&nbsp;</div>
+                    <div class="row g-3">
+                        <div class="objetfitcover cont_tit_img">
+                            <img class="img-fluid imagen imagen-blur"
+                                src="https://c.pxhere.com/photos/7e/ce/electrician_lego_repair_craftsmen_elektroniker_board_computer_chip-925691.jpg!d"
+                                alt="">
+                            <div class="cent_title_img text-capitalize display-6" id="hw"><em>Le Hardware</em></div>
+                        </div>
+                        <div class="mx-auto" style="width: 200px;">&nbsp;</div>
+                        <p>Il existe à ce jour plusieurs versions du Raspberry Pi. En ce qui concerne le matériel, nous
+                            parlerons du Raspberry Pi 4 Model B avec 2GB de mémoire RAM car il s'agit de la version la
+                            plus récente et la plus économique. Il faut savoir que vous pouvez étendre les
+                            fonctionnalités en ajoutant de la mémoire ou d'autres composants. Il est certain que cela
+                            augmentera également votre coût d'achat.
+
+                            Schéma fonctionnel pour schématiser les composants matériels du Raspberry Pi.</p>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="card border-primary mb-4">
+                                    <div class="card-body text-primary">
+                                        <h5 class="card-title display-6" id="hw_cpu">CPU/GPU</h5>
+                                        <p class="card-text">Le SoC Broadcom 2711 a 64-bit quadruple cœur est empilé
+                                            sous la puce de RAM, comprend un processeur ARM Cortex-A72 à une fréquence
+                                            d'horloge de 1.5 GHz, une unité de traitement graphique (GPU) VideoCore VI à
+                                            500 MHz et de la mémoire RAM. Il possède un cache de niveau 1 (L1) de 16 Ko
+                                            et un cache de niveau 2 (L2) de 128 Ko.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card border-secondary mb-4">
+                                    <div class="card-body text-secondary">
+                                        <h5 class="card-title display-6" id="hw_ram">RAM</h5>
+                                        <p class="card-text">La version moins chère est proposée avec 2 Go de mémoire
+                                            vive (LPDDR4 SDRAM), mais il existe également des versions de 4 et 8 Go.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card border-success mb-4">
+                                    <div class="card-body text-success">
+                                        <h5 class="card-title display-6" id="hw_usb">USB hub</h5>
+                                        <p class="card-text">La charte intègre deux ports USB 2.0 et deux ports USB 3.0.
+                                            C'est-à-dire qu'il y a jusqu'à 4 ports USB disponibles au total.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card border-warning mb-4">
+                                    <div class="card-body text-warning">
+                                        <h5 class="card-title display-6" id="hw_ethernet">Ethernet</h5>
+                                        <p class="card-text">Pour la connexion aux réseaux, il dispose de la technologie
+                                            True Gigabit Ethernet ainsi que wireless LAN intégré à la carte (dual-band
+                                            802.11 b/g/n/ac).</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card border-danger mb-4">
+                                    <div class="card-body text-danger">
+                                        <h5 class="card-title display-6" id="hw_io">I/O</h5>
+                                        <p class="card-text">Les périphériques compatibles USB peut être adaptés grâce
+                                            aux ports disponibles sur la carte. Ainsi, vous pouvez disposer d'une
+                                            souris, d'un clavier, d'un écran, d'une imprimante et de bien d'autres
+                                            périphériques encore. Pour terminer avec cette section, il est important de
+                                            mentionner qu'il serait raisonnable d'investir un peu plus d'argent pour
+                                            obtenir l'Étui et le Bloc d'alimentation correspondant à la version. Les
+                                            deux sont proposés séparément.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mx-auto" style="width: 200px;">&nbsp;</div>
+                    <div class="row g-3">
+                        <div class="objetfitcover cont_tit_img">
+                            <img class="img-fluid imagen imagen-blur"
+                                src="https://live.staticflickr.com/4132/4948494811_f94cba9c87_b.jpg" alt="">
+                            <div class="cent_title_img text-capitalize display-6" id="sw"><em>Le Software</em></div>
+                        </div>
+                        <div class="mx-auto" style="width: 200px;">&nbsp;</div>
+                        Nous avons déjà parlé du matériel Raspberry Pi, il est maintenant temps de parler du logiciel
+                        qui fait fonctionner cette option technologique extraordinaire.
+                        <div class="mx-auto" style="width: 200px;">&nbsp;</div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="card border-primary mb-4">
+                                    <div class="card-body text-primary">
+                                        <h5 class="card-title display-6" id="sw_os">Système d'exploitation</h5>
+                                        <p>
+                                            De base et officiellement, son système d'exploitation est une adaptation de
+                                            Debian,
+                                            appelée
+                                            <mark>Raspbian</mark>.
+                                        </p>
+                                        <p>
+                                            Toutefois, vous pouvez installer d'autres systèmes d'exploitation existants
+                                            (par exemple
+                                            une
+                                            version adaptée de Windows 10) ou, pourquoi pas, créer votre propre système
+                                            d'exploitation.
+                                        </p>
+                                        <p>
+                                            La liste des systèmes d'exploitation est très étendue, certains d'entre eux
+                                            sont
+                                            énumérés
+                                            ci-dessous.
+                                        </p>
+                                        <ol class="list-group list-group-numbered">
+                                            <li class="list-group-item">Snappy Ubuntu Core Pi 2, basé sur la
+                                                distribution Ubuntu</li>
+                                            <li class="list-group-item">OpenELEC, est une distribution Linux légère
+                                                basée sur le lecteur multimédia XBMC.
+                                            </li>
+                                            <li class="list-group-item">Pidora, basé sur la distribution Fedora.</li>
+                                            <li class="list-group-item">RaspAnd Pi 2, basé sur Android 5.1</li>
+                                            <li class="list-group-item">Windows 10 IoT Core for Raspberry Pi 2 / 3, est
+                                                une petite version de Windows 10.
+                                            </li>
+                                        </ol>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card border-danger mb-4">
+                                    <div class="card-body text-danger">
+                                        <h5 class="card-title display-6" id="sw_app">Logiciel d’applications</h5>
+                                        <p>
+                                            Selon le système d'exploitation, vous pouvez disposer de divers logiciels
+                                            d'application.
+                                        </p>
+                                        <p>
+                                            Dans le
+                                            cas des systèmes d'exploitation basés sur linux, l'installation se fera
+                                            principalement à
+                                            partir
+                                            de la ligne de commande :
+                                        </p>
+                                        <p class="bg-secondary text-warning text-center">
+                                            sudo apt install «nom du paquet d'installation»
+                                        </p>
+                                        <p>
+                                            Mais, en général, nous pouvons compter sur la gamme d'applications que nous
+                                            pourrions
+                                            avoir
+                                            sur
+                                            un ordinateur de bureau : </p>
+                                        <ol class="list-group list-group-numbered">
+                                            <li class="list-group-item">Éditeurs graphiques (Gimp, Inkscape)</li>
+                                            <li class="list-group-item">Éditeurs
+                                                multimédias
+                                                (VLC, QMMP, Audacity, Kdenlive)</li>
+                                            <li class="list-group-item">Émulateurs de jeux vidéo</li>
+                                            <li class="list-group-item">Clients Torrent</li>
+                                            <li class="list-group-item">Suites
+                                                bureautiques
+                                                (LibreOffice)</li>
+                                        </ol>
+                                        <p>Pour
+                                            n'en citer que quelques-uns.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer text-muted">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mx-auto" style="width: 200px;">&nbsp;</div>
+            <div class="card text-center">
+                <div class="card-header display-6" id="quoi_faire">Ce que vous pouvez faire avec le Raspberry Pi</div>
+                <div class="card-body text-start">
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <div class="card">
+                                <p class="contenedor"><img class="img-fluid imagen imagen-saturate"
+                                        src="https://c.pxhere.com/images/ec/3a/274b6419c2a27421b9e8a780e4dd-1582957.jpg!d"
+                                        alt=""></p>
+                                <div class="card-body text-center">
+                                    Auteur image : <a href="https://pxhere.com/en/photographer/767067"
+                                        target="_blank">mohamed hassan</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <p>
+                                Les thèmes du matériel et du logiciel ont été abordés. Il a également été constaté que
+                                la
+                                Raspberry n'est pas la seule option sur le marché. Il est temps d'aborder le précieux
+                                sujet
+                                de
+                                ce qu'il faut faire avec un Raspberry Pi.
+                            </p>
+                            <p>
+                                Dans un premier temps, vous pouvez apprendre comment fonctionne un ordinateur. Assembler
+                                les
+                                composants, installer et configurer le logiciel.
+                            </p>
+                            <p>
+                                Jusqu'à ce stade, nous aurons un mini-ordinateur prêt à être utilisé pour regarder des
+                                films,
+                                écouter de la musique, surfer sur Internet, créer des documents texte ou des feuilles de
+                                calcul,
+                                éditer des photos et des vidéos, jouer à des jeux vidéo.
+                            </p>
+                            <p>
+                                Mais pourquoi se contenter de ça ?
+                            </p>
+                            <p>
+                                Nous pouvons être plus créatifs avec ce petit appareil.
+                            </p>
+                        </div>
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <h5 class="display-6 text-info" id="idees_Simples">Voici quelques idées simples</h5>
+                                <ol class="card border-success list-group list-group-numbered">
+                                    <li class="list-group-item">
+                                        Un mini-ordinateur pour les travaux généraux. Nous pouvons assembler et
+                                        configurer
+                                        l'appareil
+                                        pour qu'il puisse être utilisé comme un ordinateur de bureau, avec souris,
+                                        clavier,
+                                        écran et
+                                        connexion Internet, ainsi que les applications appropriées telles que les suites
+                                        bureautiques.
+                                        Mais Raspberry propose une version qui inclut la carte et ses composants dans un
+                                        boîtier
+                                        qui est
+                                        aussi le clavier. C'est le Raspberry Pi 400. Il suffit de connecter l'appareil à
+                                        un
+                                        moniteur ou
+                                        à un écran de télévision.
+                                    </li>
+                                    <li class="list-group-item">
+                                        En installant les bonnes applications sur l'appareil, nous pouvons encourager
+                                        les
+                                        enfants à
+                                        apprendre à programmer de manière ludique.
+                                    </li>
+                                    <li class="list-group-item">Nous pouvons faire de l'appareil un centre de
+                                        divertissement et de multimédia.
+                                    </li>
+                                    <li class="list-group-item">
+                                        Utilisez l'appareil comme serveur de courrier, serveur web, serveur de
+                                        téléchargement de
+                                        torrents...
+                                    </li>
+                                    <li class="list-group-item">Transformer le Raspberry Pi en un émetteur FM.</li>
+                                </ol>
+                            </div>
+                            <div class="col-md-6">
+                                <h5 class="display-6 text-danger" id="idees_avancees">Et pour les plus aventureux</h5>
+                                <ol class="card border-warning list-group list-group-numbered">
+                                    <li class="list-group-item">Gérez les appareils IoT pour rendre la maison plus
+                                        intelligente.</li>
+                                    <li class="list-group-item">Lightberry</li>
+                                    <li class="list-group-item">Fabriquez votre propre téléphone portable (projet
+                                        PiPhone).</li>
+                                    <li class="list-group-item">Faire une station météorologique (projet Raspberry Pi
+                                        Internet Weather Station).
+                                    </li>
+                                    <li class="list-group-item">Faire une caméra de surveillance (projet Raspberry Pi As
+                                        Low-cost HD
+                                        Surveillance
+                                        Camera).</li>
+                                </ol>
+                            </div>
+                        </div>
+                        <div class="mx-auto" style="width: 200px;">&nbsp;</div>
+                    </div>
+                    <div class="card-footer text-muted">
+                    </div>
+                </div>
+            </div>
+            <div class="mx-auto" style="width: 200px;">&nbsp;</div>
+            <div class="objetfitcover cont_tit_img">
+                <img class="img-fluid imagen imagen-blur"
+                    src="https://cdn.thewirecutter.com/wp-content/media/2021/05/stafflegos-2048px-0906-2x1-1.jpg?auto=webp&quality=75&crop=2:1&width=980&dpr=2"
+                    alt="">
+                <div class="cent_title_img text-capitalize display-6"><em>Bref... la limite est
+                        l'imagination.</em></div>
+            </div>
+            <div class="mx-auto" style="width: 200px;">&nbsp;</div>
+            <p class="display-6 text-center">
+                Sur le site officiel de Raspberry, il y a une section spéciale de projets pour tous les
+                goûts :
+            </p>
+            <p class="display-6 text-center"><a href="https://projects.raspberrypi.org/en"
+                    target="_blank">https://projects.raspberrypi.org/en</a></p>
+            <p class="display-6 text-center">
+                N’hésite pas de nous contacter dans n’importe quel besoin informatique vous avez, nous
+                sommes là
+                pour vous.
+            </p>
+        </div>
+    </div>
+    <!-- Footer, the same for all pages -->
+    <div class="w-auto p-3">
+        <!-- Footer -->
+        <footer class="text-center text-lg-start text-muted bg-color-berry-light">
+            <!-- Section: Social media -->
+            <div class="d-flex justify-content-center justify-content-lg-between p-4 txt_color_berry">
+            </div>
+            <!-- Section: Social media -->
+            <!-- Section: Links  -->
+            <section class="txt_color_berry">
+                <div class="container text-center text-md-start mt-5">
+                    <!-- Grid row -->
+                    <div class="row mt-3">
+                        <!-- Grid column -->
+                        <div class="col-lg-4 text-center" style="width: 300px;">
+                            <div class="text-start">
+                                <!-- Links -->
+                                <h6 class="text-uppercase fw-bold mb-4 souligne"><i class="fa-solid fa-sitemap"></i>
+                                    &nbsp;
+                                    Plan du
+                                    site</h6>
+                                <ul class="list-unstyled">
+                                    <li class="shadow_menu"><a href="./Accueil.htm" class="underline"><i
+                                                class="fa-solid fa-house-user"></i> Accueil</a>
+                                    </li>
+                                    <li class="shadow_menu"><a href="./Plan_Site.htm" class="underline"><i
+                                                class="fa-solid fa-sitemap"></i> Plan du
+                                            site</a></li>
+                                    <li class="shadow_menu"><a href="./Sites_Interets.htm" class="underline"><i
+                                                class="fa-solid fa-book-atlas"></i> Sites
+                                            d’intérêts</a></li>
+                                    <li class="shadow_menu"><a href="./FAQ.htm" class="underline"><i
+                                                class="fa-solid fa-circle-question"></i>
+                                            FAQ</a></li>
+                                    <li class="shadow_menu"><a href="./Connaitre_Raspberry_Pi.htm" class="underline"><i
+                                                class="fa-brands fa-raspberry-pi"></i>
+                                            Connaître Raspberry Pi</a></li>
+                                    <li class="shadow_menu"><a href="./A_Propos.htm" class="underline"><i
+                                                class="fa-solid fa-circle-info"></i> À
+                                            propos</a></li>
+                                    <li class="shadow_menu"><a href="./Contact.htm" class="underline"><i
+                                                class="fa-solid fa-paper-plane"></i>
+                                            Contactez-nous</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Grid column -->
+                        <!-- Grid column -->
+                        <div class="col-lg-4 text-center">
+                            <!-- Content -->
+                            <h6 class="text-uppercase fw-bold mb-4 souligne"><i class="fa-brands fa-raspberry-pi"></i>
+                                EducaJeux inc.</h6>
+                            <p>MOYEN DE TÉLÉCOMMUNICATIONS</p>
+                            <p><b>Tâche 2</b>
+                                <br>Gr. i2013, juin 2022
+                                <br>Sigfrido Gonzalez Puga
+                            </p>
+                            <hr>
+                            <div class="row">
+                                <div class="">
+                                    <div class="demo-content text-center">Site web réactif et compatible avec <br>
+                                        les
+                                        navigateurs les plus courants : <br> <i class="fa-brands fa-chrome"
+                                            title="Chrome"></i> <i class="fa-brands fa-opera" title="Opera"></i> <i
+                                            class="fa-brands fa-safari" title="Safari"></i> <i class="fa-brands fa-edge"
+                                            title="Edge"></i> <i class="fa-brands fa-firefox" title="Firefox"></i></div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Grid column -->
+                        <!-- Grid column -->
+                        <div class="col-lg-4 text-center">
+                            <h6 class="text-uppercase fw-bold mb-4 souligne"><i class="fa-solid fa-paper-plane"></i>
+                                Contactez-nous</h6>
+                            <p>
+                                <i class="fas fa-home me-3"></i> 6255 13e Ave., Montréal, QC H1X 2Y6 <br>
+                                <i class="fas fa-envelope me-3"></i>it-system@sigop.net <br>
+                                <i class="fas fa-phone me-3"></i> (514) 742 6198 <br>
+                                <i class="fa-brands fa-internet-explorer"></i> <a
+                                    href="https://school.sigop.net/EMICA/462166/"
+                                    target="_blank">https://school.sigop.net/EMICA/462166/</a>
+                            </p> <br>
+                            <hr>
+                            Retrouvez-nous sur nos réseaux sociaux: <br>
+
+                            <a href="https://sigop.net/" target="_blank" class="me-4 text-reset"><i
+                                    class="fa-regular fa-address-card"></i></a>
+                            <a href="https://www.linkedin.com/in/sigop" target="_blank" class="me-4 text-reset"><i
+                                    class="fab fa-linkedin"></i></a>
+                            <a href="https://github.com/sgonzalp" target="_blank" class="me-4 text-reset"><i
+                                    class="fab fa-github"></i></a>
+                            <a href="https://sigop.wordpress.com/" target="_blank" class="me-4 text-reset"><i
+                                    class="fa-brands fa-wordpress"></i></a>
+                            <a href="https://blog.sigop.net/" target="_blank" class="me-4 text-reset"><i
+                                    class="fa-thin fa-note"></i></a>
+                            <a href="https://www.facebook.com/www.SiGoP.net" target="_blank" class="me-4 text-reset"><i
+                                    class="fa-brands fa-facebook-f"></i></a>
+                            <a href="https://twitter.com/sigopnet" target="_blank" class="me-4 text-reset"><i
+                                    class="fa-brands fa-twitter"></i></a>
+                            <a href="https://www.youtube.com/c/SigfridoGonzalezPuga" target="_blank"
+                                class="me-4 text-reset"><i class="fa-brands fa-youtube"></i></a>
+                            <a href="http://instagram.com/sgonzalp/" target="_blank" class="me-4 text-reset"><i
+                                    class="fa-brands fa-instagram"></i></a>
+                            <a href="https://pinterest.com/sgonzalezpuga" target="_blank" class="me-4 text-reset"><i
+                                    class="fa-brands fa-pinterest-square"></i></a>
+                        </div>
+                        <!-- Grid column -->
+                    </div>
+                    <!-- Grid row -->
+                </div>
+                <div>&nbsp;</div>
+            </section>
+            <!-- Section: Links  -->
+            <!-- Copyright -->
+            <div class="text-center p-4" style="background-color: #44B28A; color: #FFF;">
+                <p>Copyright &copy; 2022 EducaJeux inc.</p>
+            </div>
+            <!-- Copyright -->
+        </footer>
+        <!-- Footer -->
+    </div>
+
+    <script src="./resources/js/main_end_page.js"></script>
+    <script src="./resources/js/audio.js"></script>
+
+</body>
+
+</html>
